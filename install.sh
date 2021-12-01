@@ -5,4 +5,5 @@ if [ $? -ne 0 ]; then
   # exit 1
 fi
 mkdir /serv/pkgs/fw
+mkdir /serv/data/fw
 git clone https://github.com/Sid220/servbuntu-fw-app.git /serv/pkgs/fw/
