@@ -1,2 +1,2 @@
 import os
-os.system("sudo ufw reload")
+os.system("sudo ufw app list")
