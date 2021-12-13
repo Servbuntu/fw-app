@@ -5,4 +5,3 @@ if [ $? -ne 0 ]; then
   # exit 1
 fi
 rm -rf /serv/pkgs/fw/
-rm -rf /serv/data/fw/
