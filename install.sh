@@ -7,3 +7,4 @@ fi
 mkdir /serv/pkgs/fw
 mkdir -p /serv/data/fw
 git clone https://github.com/Servbuntu/fw-app.git /serv/pkgs/fw/
+mv /serv/pkgs/fw/fw.sht /serv/help/
