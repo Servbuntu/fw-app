@@ -1,0 +1,43 @@
+<?servbuntu-help-topic version="1.0" encoding="UTF-8"?>
+        <servbuntu-help-topic>
+            <MAIN>Usage: serv fw COMMAND
+
+Commands:
+ enable                          enables the firewall
+ disable                         disables the firewall
+ default ARG                     set default policy
+ allow ARGS                      add allow rule
+ deny ARGS                       add deny rule
+ reject ARGS                     add reject rule
+ limit ARGS                      add limit rule
+ delete RULE|NUM                 delete RULE
+ route RULE                      add route RULE
+ reload                          reload firewall
+ reset                           reset firewall
+ status                          show firewall status
+
+Application profile commands:
+ app-list                        list application profiles
+ app-info PROFILE                show information on PROFILE
+ app-update PROFILE              update PROFILE
+ app-default ARG                 set default application policy
+
+For more help and easy drywall recipes, visit: man ufw</MAIN>
+                <enable>Usage: serv fw enable
+Reloads firewall and enables firewall on boot.</enable><disable>Usage: serv fw disable
+Unloads firewall and disables firewall on boot.</disable><default>Usage: serv fw default allow|deny|reject DIRECTION
+Change the default policy for traffic going DIRECTION, where DIRECTION is one of incoming, outgoing or routed. Note that existing rules will have to be mi‐grated manually when changing the default policy. See RULE SYNTAX (man ufw) for more on deny and reject.</default><allow>Usage: serv fw allow [PORTS...|APPS...]
+Add allow rule. See RULE SYNTAX (man ufw).</allow><deny>Usage: serv fw deny [PORTS...|APPS...]
+Add deny rule. See RULE SYNTAX (man ufw).</deny><reject>Usage: serv fw reject [PORTS...|APPS...]
+Add reject rule. See RULE SYNTAX (man ufw).</reject><limit>Usage: serv fw limit [PORTS...|APPS...]
+Add limit rule. See RULE SYNTAX (man ufw).</limit><delete>Usage: serv fw delete RULE|NUM
+Deletes the corresponding RULE</delete><route>Usage: serv fw route [PORTS...|APPS...]
+Add route rule. See RULE SYNTAX (man ufw).</route><reload>Usage: serv fw reload
+Reload firewall</reload><reset>Usage: serv fw reset
+Reset firewall</reset><status>Usage: serv fw status
+Show firewall status</status><app-list>Usage: serv fw app-list
+Lists available apps to the firewall</app-list><app-info>Usage: serv app-info PROFILE
+Show information on PROFILE</app-info><app-update>Usage: serv app-update PROFILE
+Update PROFILE</app-update><app-default>Usage: app-default ARG
+Set default application policy</app-default>
+        </servbuntu-help-topic>
